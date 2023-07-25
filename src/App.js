@@ -1,12 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './Components/Navbar';
 
 function App() {
   return (
-    <div className='text-2xl font-bold text-center'>
-      <h1>Portfolio Rameez Qazi</h1>
-      
-    </div>
+    <Navbar />
   );
 }
 
