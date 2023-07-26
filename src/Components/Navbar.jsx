@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { TypeAnimation } from 'react-type-animation';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
+import {MdEmail} from 'react-icons/md';
+import {BsFillFileEarmarkPersonFill} from 'react-icons/bs';
+
 
 const Navbar = () => {
     const [navView, setNavView] = useState(false);
@@ -14,15 +17,17 @@ const Navbar = () => {
 
     return (
         <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
-            <div className='text-xl'>
+            <div>
                 <TypeAnimation
                     sequence={[
-                        "Rameez Qazi",
+                        "Hi I'm Rameez Qazi",
                         1000,
-                        // "Web Developer",
-                        // 1000,
-                        // "React Developer",
-                        // 1000,
+                        "I Love to Code",
+                        1000,
+                        "Tech Geek",
+                        1000,
+                        "Front-End Developer",
+                        1000,
                     ]}
                     speed={50}
                 // repeat={Infinity}
@@ -32,19 +37,18 @@ const Navbar = () => {
             </div>
 
             {/* menu */}
-                <ul className='hidden md:flex'>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Experience</li>
-                    <li>Skills</li>
-                    <li>Work</li>
-                    <li>Contact</li>
-                </ul>
-            
+            <ul className='hidden md:flex'>
+                <li>Home</li>
+                <li>About</li>
+                <li>Experience</li>
+                <li>Skills</li>
+                <li>Work</li>
+                <li>Contact</li>
+            </ul>
 
 
             {/* Humberger Menu */}
-            <div className='md:hidden z-10' onClick={handleNav}>
+            <div className='md:hidden z-10 text-xl' onClick={handleNav}>
                 {!navView ? <FaBars /> : <FaTimes />}
             </div>
 
@@ -58,7 +62,36 @@ const Navbar = () => {
 
             </ul>
 
-            <div></div>
+            <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
+                <ul>
+                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-300 bg-[#171515]'>
+                        <a href="#" className='flex justify-between items-center w-full text-gray-300'>
+                            Github <FaGithub size={30} />
+                        </a>
+                    </li>
+                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-300 bg-[#0A66C2]'>
+                        <a href="#" className='flex justify-between items-center w-full text-gray-300'>
+                            LinkedIn <FaLinkedin size={30} />
+                        </a>
+                    </li>
+                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-300 bg-[#BB001B]'>
+                        <a href="#" className='flex justify-between items-center w-full text-gray-300'>
+                            Email <MdEmail size={30} />
+                        </a>
+                    </li>
+                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-300 bg-[#565f69]'>
+                        <a href="#" className='flex justify-between items-center w-full text-gray-300'>
+                            Resume <BsFillFileEarmarkPersonFill size={30} />
+                        </a>
+                    </li>
+                    
+                   
+                    
+                </ul>
+
+            </div>
+
+
 
         </div>
     )
