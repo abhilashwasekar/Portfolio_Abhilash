@@ -10,10 +10,10 @@ import NodeJsLogo from '../asset/node.png';
 
 const Skills = () => {
     return (
-        <div className='text-gray-300 bg-[#0a192f] font-sans'>
+        <div className='w-full h-screen text-gray-300 bg-[#0a192f] font-sans'>
             <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
                 <div>
-                    <p className='text-4xl font-bold inline border-b-4 border-[#C23B22]'>Experience</p>
+                    <p className='text-4xl font-bold inline border-b-4 border-[#C23B22]'>Skills</p>
 
                 </div>
 
@@ -34,7 +34,7 @@ const Skills = () => {
                     </div>
 
                     <div className='shadow-2xl shadow-[#040c16] hover:scale-110 duration-300 rounded-md'>
-                        <img src={ReactLogo} className='w-20 mx-auto animate-pulse' alt="react icon" />
+                        <img src={ReactLogo} className='w-20 mx-auto' alt="react icon" />
                         <p className='my-4'>ReactJs</p>
                     </div>
 

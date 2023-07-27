@@ -48,7 +48,7 @@ const Navbar = () => {
 
 
             {/* Humberger Menu */}
-            <div className='md:hidden z-10 text-xl' onClick={handleNav}>
+            <div className='md:hidden z-20 text-xl' onClick={handleNav}>
                 {!navView ? <FaBars /> : <FaTimes />}
             </div>
 
