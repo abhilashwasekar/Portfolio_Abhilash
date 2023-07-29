@@ -17,7 +17,7 @@ const Navbar = () => {
 
 
     return (
-        <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] backdrop-filter backdrop-blur-lg bg-opacity-30 text-gray-300 z-10 font-sans'>
+        <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-10 font-sans'>
             <div>
                 <TypeAnimation
                     sequence={[
