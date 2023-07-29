@@ -65,7 +65,7 @@ const Navbar = () => {
                 {!navView ? <FaBars /> : <FaTimes />}
             </div>
 
-            <ul className={!navView ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'}>
+            <ul className={!navView ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] backdrop-filter backdrop-blur-lg bg-opacity-30 flex flex-col justify-center items-center'}>
                 <li className='py-6 text-4xl'>
                     <Link onClick={handleNav}  activeClass='active' to='home' smooth={true} duration={1000}>Home</Link>
 

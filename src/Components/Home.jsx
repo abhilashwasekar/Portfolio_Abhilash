@@ -2,13 +2,15 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { HiArrowNarrowRight } from 'react-icons/hi'
+import { Link, animateScroll as scroll } from "react-scroll";
+
 
 const Home = () => {
     useEffect(() => {
         AOS.init()
 
     }, [])
-    
+
     return (
         <div name="home" className='w-full h-screen bg-[#0a192f]'>
             <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
@@ -21,14 +23,17 @@ const Home = () => {
                     I am focused in building mobile responsive web applications.
                 </p>
                 <div>
-                    <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#C23B22] hover:border-[#C23B22] duration-300 font-sans'>View My Work
+                    <Link activeClass='active' to='work' smooth={true} duration={1000}>
 
-                        <span className='group-hover:ml-6 duration-300'>
-                            <HiArrowNarrowRight className='ml-3' />
+                        <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#C23B22] hover:border-[#C23B22] duration-300 font-sans'>View My Work
 
-                        </span>
+                            <span className='group-hover:ml-6 duration-300'>
+                                <HiArrowNarrowRight className='ml-3' />
 
-                    </button>
+                            </span>
+
+                        </button>
+                    </Link>
                 </div>
 
             </div>
