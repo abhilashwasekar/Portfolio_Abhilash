@@ -21,8 +21,6 @@ const Navbar = () => {
             <div>
                 <TypeAnimation
                     sequence={[
-                        "Hi I'm Rameez Qazi",
-                        1000,
                         "I Love to Code",
                         1000,
                         "Tech Geek",
@@ -31,7 +29,7 @@ const Navbar = () => {
                         1000,
                     ]}
                     speed={50}
-                // repeat={Infinity}
+                repeat={Infinity}
                 // style={{ fontSize: '1em' }}
                 />
 
@@ -105,7 +103,7 @@ const Navbar = () => {
                         </a>
                     </li>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-300 bg-[#BB001B]'>
-                        <a href="rameez.qazi23@gmail.com" target='_blank' className='flex justify-between items-center w-full text-gray-300'>
+                        <a href="#" target='_blank' className='flex justify-between items-center w-full text-gray-300'>
                             Email <MdEmail size={30} />
                         </a>
                     </li>

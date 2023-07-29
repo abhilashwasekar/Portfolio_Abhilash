@@ -1,13 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { HiArrowNarrowRight } from 'react-icons/hi'
 
 const Home = () => {
+    useEffect(() => {
+        AOS.init()
+
+    }, [])
+    
     return (
         <div name="home" className='w-full h-screen bg-[#0a192f]'>
             <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
-                <p className='text-[#C23B22] font-bold font-sans sm:text-2xl'>Hi My name is</p>
-                <h1 className='text-4xl sm:text-7xl font-bold text-[#ccd6f6] font-sans'>Rameez Qazi</h1>
-                <h2 className='text-4xl sm:text-7xl font-bold text-[#8892b0] font-sans'>I am Fronend Web Developer,</h2>
+                <p className='text-[#C23B22] font-bold font-sans sm:text-2xl' data-aos='fade-down' data-aos-duration="1000">Hi My name is</p>
+                <h1 className='text-4xl sm:text-7xl font-bold text-[#ccd6f6] font-sans' data-aos='fade-right' data-aos-duration="2000">Rameez Qazi</h1>
+                <h2 className='text-4xl sm:text-7xl font-bold text-[#8892b0] font-sans' data-aos='fade-up' data-aos-duration='2500'>I am Frontend Web Developer,</h2>
                 <p className='py-5 max-w-[700px] text-[#8892b0] font-sans'>
                     I am a dedicated and skilled Frontend Developer with a specialization in HTML, CSS, JavaScript, and TypeScript.
                     With a keen eye for design and a passion for creating seamless user experiences,

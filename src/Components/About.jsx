@@ -1,6 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const About = () => {
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
     return (
         <div name="about" className='w-full h-screen bg-[#0a192f] text-gray-300 font-sans'>
             <div className='flex flex-col justify-center items-center w-full h-full'>
@@ -16,10 +22,10 @@ const About = () => {
                 </div>
 
                 <div className='max-w-[1000px] w-full px-4 grid sm:grid-cols-2 gap-8'>
-                    <div className='sm:text-right text-4xl font-bold'>
+                    <div className='sm:text-right text-4xl font-bold' data-aos='fade-right' data-aos-duration='1000'>
                         <p>Hi,  I am Rameez, Nice to meet you, Please take a look of my Projects, Thank You.</p>
                     </div>
-                    <div>
+                    <div data-aos='fade-up' data-aos-duration='1000'>
                         <p>
                             Unlock the full potential of your web presence with a seasoned Frontend Developer
                             deeply passionate about crafting captivating digital experiences. With expertise
