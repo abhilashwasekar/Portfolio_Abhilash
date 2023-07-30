@@ -4,6 +4,7 @@ import { Avatar, Card } from 'antd';
 import data from '../data/portfolioData';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ShowCard from './ShowCard';
 
 
 const { Meta } = Card;
@@ -13,6 +14,9 @@ const { Meta } = Card;
 const Work2 = () => {
     const [nextItems, setNextItems] = useState(6)
     const [portfolios, setPortfolios] = useState(data)
+    const [showCard, setShowCard] = useState(false)
+    const [activeId, setActiveId] = useState(null)
+
 
     useEffect(() => {
         AOS.init()
@@ -21,6 +25,12 @@ const Work2 = () => {
 
     const handleLoadMore = () => {
         setNextItems(prev => prev + 3)
+    }
+
+    const handleShowCard = (id) => {
+        setShowCard(true)
+        setActiveId(id)
+
     }
 
     console.log("Protfolio data", data[5].id)
@@ -49,7 +59,7 @@ const Work2 = () => {
 
                                 <div className='w-full h-full bg-[#0a192f] backdrop-filter backdrop-blur-sm bg-opacity-30 rounded-[8px] absolute top-0 left-0 z-[5] hidden group-hover:block cursor-pointer'>
                                     <div className='w-full h-full flex items-center justify-center'>
-                                        <button className='text-white bg-[#0a192f] hover:bg-[#53565a] py-2 px-4 rounded-[8px] font-500 ease-in duration-200'>See details</button>
+                                        <button onClick={handleShowCard} className='text-white bg-[#0a192f] hover:bg-[#53565a] py-2 px-4 rounded-[8px] font-500 ease-in duration-200'>See details</button>
 
                                     </div>
                                 </div>
