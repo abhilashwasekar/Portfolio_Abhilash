@@ -16,12 +16,12 @@ const ShowCard = ({ activeId, setShowCard }) => {
     const portfolio = data.find(data => data.id === activeId)
 
     return (
-        <div className='w-full h-screen fixed top-0 left-0 z-10 bg-[#0a192f] bg-opacity-40 font-sans'>
-            <div className='max-w-[1000px] w-[80%] sm:w-[60%] lg:w-[40%]  mx-auto absolute top-1/2 left-1/2 z-20 bg-white rounded-[8px]
+        <div className='w-full h-screen fixed top-0 left-0 z-10 bg-[#0a192f] backdrop-filter backdrop-blur-sm bg-opacity-10 font-sans'>
+            <div className='max-w-[1000px] w-[80%] sm:w-[60%] lg:w-[40%]  mx-aut absolute top-1/2 left-1/2 z-20 bg-white rounded-[8px]
             transform -translate-x-1/2 -translate-y-1/2 p-5'>
-                <div>
+                <div className='flex items-center justify-center'>
                     <figure>
-                        <img className='rounded-[8px]' src={portfolio.imgUrl} alt="image" />
+                        <img className='rounded-[8px] w-[350px]' src={portfolio.imgUrl} alt="portfolio" />
                     </figure>
                 </div>
 
