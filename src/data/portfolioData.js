@@ -4,7 +4,7 @@
 // import porfolioImg04 from '../asset/projects/portfolio-04.png'
 // import porfolioImg05 from '../asset/projects/portfolio-05.png'
 // import porfolioImg06 from '../asset/projects/portfolio-06.png'
-import potfolioImg006 from '../asset/projects/realestate.jpg'
+import potfolioImg006 from '../asset/projects/projectImg-01.JPG';
 
 
 
