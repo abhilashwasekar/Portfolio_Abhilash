@@ -21,7 +21,7 @@ const ShowCard = ({ activeId, setShowCard }) => {
             transform -translate-x-1/2 -translate-y-1/2 p-5'>
                 <div className='flex items-center justify-center'>
                     <figure>
-                        <img className='rounded-[8px] w-[350px]' src={portfolio.imgUrl} alt="portfolio" />
+                        <img className='rounded-[8px]' src={portfolio.imgUrl} alt="portfolio" />
                     </figure>
                 </div>
 
@@ -38,7 +38,7 @@ const ShowCard = ({ activeId, setShowCard }) => {
                         ))
                     }
                 </div>
-                <a href={portfolio.siteUrl}>
+                <a target='_blank' rel='noreferrer' href={portfolio.siteUrl}>
                     <button className='text-white bg-[#0a192f] hover:bg-[#53565a] py-2 px-4 my-4 rounded-[8px] text-[12px] sm:text-[14px] ease-in duration-200'>Live Site</button>
                 </a>
 
