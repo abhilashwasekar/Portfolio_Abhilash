@@ -14,6 +14,7 @@ const ShowCard = ({ activeId, setShowCard }) => {
 
 
     const portfolio = data.find(data => data.id === activeId)
+    
 
     return (
         <div className='w-full h-screen fixed top-0 left-0 z-10 bg-[#0a192f] backdrop-filter backdrop-blur-sm bg-opacity-10 font-sans'>

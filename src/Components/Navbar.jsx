@@ -29,7 +29,7 @@ const Navbar = () => {
                         1000,
                     ]}
                     speed={50}
-                repeat={Infinity}
+                    repeat={Infinity}
                 // style={{ fontSize: '1em' }}
                 />
 
@@ -59,30 +59,32 @@ const Navbar = () => {
                 </li>
             </ul>
 
-
+            {/* absolute top-0 left-0 w-full h-screen  bg-[#0a192f] backdrop-filter backdrop-blur-lg bg-opacity-30 flex flex-col justify-center items-center */}
             {/* Humberger Menu */}
             <div className='md:hidden z-20 text-xl' onClick={handleNav}>
                 {!navView ? <FaBars /> : <FaTimes />}
             </div>
+            
+            <ul className={!navView ? 'absolute top-0 right-0 left-0 flex flex-col items-center justify-center transition-all duration-700 -translate-y-[100vh]'
+                : 'md:hidden absolute w-full h-screen top-0 right-0 left-0 flex flex-col justify-center items-center bg-[#0a192f] backdrop-filter backdrop-blur-lg bg-opacity-30 z-10 transition-all duration-700 translate-y-0'}>
 
-            <ul className={!navView ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] backdrop-filter backdrop-blur-lg bg-opacity-30 flex flex-col justify-center items-center'}>
-                <li className='py-6 text-4xl'>
-                    <Link onClick={handleNav}  activeClass='active' to='home' smooth={true} duration={1000}>Home</Link>
+                <li className='py-4 text-3xl font-semibold'>
+                    <Link onClick={handleNav} activeClass='active' to='home' smooth={true} duration={1000}>Home</Link>
 
                 </li>
-                <li className='py-6 text-4xl'>
+                <li className='py-4 text-3xl font-semibold'>
                     <Link onClick={handleNav} activeClass='active' to='about' smooth={true} duration={1000}>About</Link>
 
                 </li>
-                <li className='py-6 text-4xl'>
+                <li className='py-4 text-3xl font-semibold'>
                     <Link onClick={handleNav} activeClass='active' to='skills' smooth={true} duration={1000}>Skills</Link>
 
                 </li>
-                <li className='py-6 text-4xl'>
+                <li className='py-4 text-3xl font-semibold'>
                     <Link onClick={handleNav} activeClass='active' to='work' smooth={true} duration={1000}>Work</Link>
 
                 </li>
-                <li className='py-6 text-4xl'>
+                <li className='py-4 text-3xl font-semibold'>
                     <Link onClick={handleNav} activeClass='active' to='contact' smooth={true} duration={1000}>Contact</Link>
 
                 </li>
