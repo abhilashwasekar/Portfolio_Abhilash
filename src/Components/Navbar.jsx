@@ -95,12 +95,12 @@ const Navbar = () => {
             <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
                 <ul>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-300 bg-[#171515]'>
-                        <a href="https://github.com/rameezqazi23" target='_blank' className='flex justify-between items-center w-full text-gray-300'>
+                        <a href="https://github.com/rameezqazi23" rel='noreferrer' target='_blank' className='flex justify-between items-center w-full text-gray-300'>
                             Github <FaGithub size={30} />
                         </a>
                     </li>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-300 bg-[#0A66C2]'>
-                        <a href="https://www.linkedin.com/in/rameez-qazi-754554160/" target='_blank' className='flex justify-between items-center w-full text-gray-300'>
+                        <a href="https://www.linkedin.com/in/rameez-qazi-754554160/" rel='noreferrer' target='_blank' className='flex justify-between items-center w-full text-gray-300'>
                             LinkedIn <FaLinkedin size={30} />
                         </a>
                     </li>
