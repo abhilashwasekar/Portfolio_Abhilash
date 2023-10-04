@@ -4,6 +4,8 @@ import portfolioImg03 from '../asset/projects/projectImg-03.JPG';
 import portfolioImg04 from '../asset/projects/projectImg-04.JPG';
 import portfolioImg05 from '../asset/projects/projectImg-05.JPG';
 import portfolioImg06 from '../asset/projects/projectImg-06.JPG';
+import portfolioImg07 from '../asset/projects/projectImg-07.JPG';
+
 
 
 
@@ -63,17 +65,17 @@ const portfolioData = [
         imgUrl: portfolioImg06,
         title: 'Web3.0 Crowdfunding Web App',
         description: 'Crafting a cutting-edge Web3 crowdfunding platform akin to Kickstarter. We are leveraging React+Vite for seamless UI, Thirdweb for decentralized magic, Metamask for wallet wizardry, Solidity for rock-solid smart contracts, and Tailwind CSS for a sleek design thats set to revolutionize crowdfunding.',
-        tech: ["React+Vite", "Tailwind css", "Solidity", "MetaMask", "Smart Contract","HardHat", "Vercel"],
+        tech: ["React+Vite", "Tailwind css", "Solidity", "MetaMask", "Smart Contract", "HardHat", "Vercel"],
         siteUrl: 'https://web3-thirdweb-seven.vercel.app/',
     },
-    // {
-    //     id: '07',
-    //     imgUrl: porfolioImg06,
-    //     title: 'Business',
-    //     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis a amet corrupti. Quas id, hic facilis ab nulla aperiam laudantium sint placeat dolorum? Error illo dicta laudantium doloribus consectetur animi.',
-    //     tech: ["React", "Tailwind css", "Node.js", "MongoDB"],
-    //     siteUrl: '#',
-    // },
+    {
+        id: '07',
+        imgUrl: portfolioImg07,
+        title: 'Business',
+        description: 'Our app harnesses the extraordinary capabilities of OpenAIs DALL-E to generate stunning and imaginative images based on your input. We have crafted this application using the MERN (MongoDB, Express.js, React, Node.js) stack to provide a seamless and responsive user experience.',
+        tech: ["React", "Vite", "Tailwind css", "Node.js", "MongoDB", "Express.js", "OpenAI"],
+        siteUrl: 'https://openai-image-generation-alpha.vercel.app/',
+    },
 
     // {
     //     id: '08',
