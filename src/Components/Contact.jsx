@@ -79,7 +79,7 @@ const Contact = () => {
         <div className="flex flex-row">
           <div>
             <h5 className="text-2xl font-bold py-4">Contact Me</h5>
-            <span>rameez.qazi23@gmail.com</span>
+            <span>abhiwasekar6@gmail.com</span>
           </div>
         </div>
 
@@ -87,7 +87,7 @@ const Contact = () => {
 
         <div className="flex flex-col">
           <div className="mb-2">
-            <span>followMe@</span>
+            <span>follow Me😀</span>
           </div>
 
           <div className="flex flex-row px-4 gap-4 items-center justify-center">
@@ -114,7 +114,7 @@ const Contact = () => {
 
         <div className="mt-8">
           <div>
-            <span>Made with ❤️ by Rameez Qazi 😀</span>
+            <span>Made with ❤️ by Abhilash Wasekar 😀</span>
           </div>
         </div>
       </div>
